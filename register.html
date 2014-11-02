@@ -94,8 +94,8 @@
         function register() {
             var usersRef = myFirebaseRef.child("cryptox");
             myFirebaseRef.set({
-                username: document.getElementById('display_name'),
-                password: document.getElementById('password')
+                username: document.getElementById('display_name').value,
+                password: document.getElementById('password').value
             })
         }
     </script>
