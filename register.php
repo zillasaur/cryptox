@@ -79,8 +79,8 @@
 			
 			<hr class="colorgraph">
 			<div class="row">
-				<div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7" onclick = "register()"></div>
-				<div class="col-xs-12 col-md-6"><a href="signin.php" class="btn btn-success btn-block btn-lg">Sign In</a></div>
+				<div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7" onclick = register()></div>
+				<div class="col-xs-12 col-md-6"><a href="signin.html" class="btn btn-success btn-block btn-lg">Sign In</a></div>
 			</div>
 		</form>
 	</div>
@@ -119,4 +119,13 @@
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+<script>
+    var myFirebaseRef = new Firebase("https://cryptox.firebaseio.com/");
+    function register() {
+        myFirebaseRef.set({
+            username: document.getElementById('display_name'),
+            password: document.getElementById('password')
+        })
+    }
+</script>
 </html>
