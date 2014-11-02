@@ -92,7 +92,6 @@
     <script>
         var myFirebaseRef = new Firebase("https://cryptox.firebaseio.com/");
         function register() {
-            var usersRef = myFirebaseRef.child(document.getElementById('display_name').value);
             myFirebaseRef.set({
                 username: document.getElementById('display_name').value,
                 password: document.getElementById('password').value
