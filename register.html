@@ -94,7 +94,7 @@
         function register() {
             username = document.getElementById('display_name').value;
             myFirebaseRef.set({
-                username: username {
+                $(username): {
                     password: document.getElementById('password').value
             }
             })
