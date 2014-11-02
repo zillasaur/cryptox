@@ -5,9 +5,6 @@
     
     <head>
         <title>CryptoX</title>
-        <script src="http://code.jquery.com/jquery-latest.js"></script>
-        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-        <script src="./js/bootstrap.js"></script>
         <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
         <link href="mystyles.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,43 +40,37 @@
             </nav>
           <h1 align ="center">Create a World</h1>
         </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-4">
-                  <img src="./images/world.png" height = "450px">
+        <div class="features">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <center><img src="./images/world.png" height = "500px"></center>
+                    </div>
+                    <div class="col-md-4">
+                      <center><img src="./Pictures/Groups.png" <!-- height = "250px" --></center>
+                    </div>
+                    <div class="col-md-4">
+                      <center><img src="./Pictures/Groups.png" <!-- height = "250px" --></center>
+                    </div>
+                  </div>
                 </div>
-                  <div class="col-md-2">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                        <center><img src="./Pictures/Groups.png" <!-- height = "250px" --></center>
+
                       </div>
-                <div class="col-md-3">
-                  <h3>Investment Vehicles</h3> 
-                    <div class="btn-group">
-                        <div class="btn-group">
-                        <center><p>Base Currency: </p></center>
-                      <select class="form-control">
-                        <option value="one">One</option>
-                        <option value="two">Two</option>
-                        <option value="three">Three</option>
-                        <option value="four">Four</option>
-                        <option value="five">Five</option>
-                        </select>
+                    <div class="col-md-4">
+                        <center><img src="./Pictures/Groups.png" <!-- height = "250px" --></center>
+                      </div>
+                    <div class="col-md-4">  
+                        <center><img src="./Pictures/Groups.png" <!-- height = "250px" --></center>
+                      </div>
+                  </div>
                 </div>
-              </div>
-            </div>
 
                   </div>
                 </div>
-<script>
-$.getJSON("https://coinbase.com/api/v1/prices/spot_rate?currency=USD&callback=?", function( data ) {
-  var items = [];
-  $.each( data, function( key, val ) {
-    items.push( "<option value ='" + key + "'>" + val + "</option>" );
-  });
- 
-  $( "<ul/>", {
-    "class": "currency",
-    html: items.join( "" )
-  }).appendTo( "body" );
-});
-</script>
+              </div>
     </body>
 </html>
