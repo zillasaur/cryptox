@@ -49,50 +49,59 @@
                         <a href = "#" id = "world" rel="popover" data-html = "true" title-html = "true" title="<a onclick = 'joinworld()'>Join this World</a>" data-content="10% Bitcoin <br \> 70% Government Bonds <br \> 15% Apple (AAPL) <br \> 5% Doge Coin <br \> <b>Size: 32 people<b> <br \> <b>Net Gain: 6.9%<b>"><img src="./images/world.png" height = "250px" id = "worldbit"></a>
                     </div>
                     <div class="col-md-4">
-                        <center><br><br><a href = "#" id = "world2" rel="popover" data-html = "true" title-html = "true" title="<a onclick = 'joinworld2()'>Join this World</a>" data-content="30% Dark Coin <br \> 65% 3D Systems Corporation (DDD) <br \> 5% PeerCoin <br \> <b>Size: 12 people<b> <br \> <b>Net Gain: 30%<b>"><img src="./images/world1.png" height = "175px" id = "worldbit2"></a></center>
+                        <center id = "info"><br><br><a href = "#" id = "world2" rel="popover" data-html = "true" title-html = "true" title="<a onclick = 'joinworld2()'>Join this World</a>" data-content="30% Dark Coin <br \> 65% 3D Systems Corporation (DDD) <br \> 5% PeerCoin <br \> <b>Size: 12 people<b> <br \> <b>Net Gain: 30%<b>"><img src="./images/world1.png" height = "175px" id = "worldbit2"></a></center>
                     </div>
                     <div class="col-md-4">
-                        <center><br><a href = "#" id = "world3" rel="popover" data-html = "true" title-html = "true" title="<a href = 'joinworld.html'>Join this World</a>" data-content="20% Master Coin <br \> 40% Government Bonds <br />30% Google (GOOG) <br \> 10% PrimeCoin <br \> <b>Size: 26 people<b> <br \> <b>Net Gain: 14%<b>"><img src="./images/medium.png" height = "200px" id = "worldbit3"></a></center>
+                        <center id = "fad"><br><a href = "#" id = "world3" rel="popover" data-html = "true" title-html = "true" title="<a href = 'joinworld.html'>Join this World</a>" data-content="20% Master Coin <br \> 40% Government Bonds <br />30% Google (GOOG) <br \> 10% PrimeCoin <br \> <b>Size: 26 people<b> <br \> <b>Net Gain: 14%<b>"><img src="./images/medium.png" height = "200px" id = "worldbit3"></a></center>
+                    <script>  
+                        var pressedjoinworld = false;
+                        var pressedjoinworld2 = false;
+                        var information = document.getElementById('fad');
+                        var variables = document.getElementById('info');
+                        function joinworld() {
+                            if (pressedjoinworld == true) {
+                                information.innerHTML = '<br><a href = "#" id = "world3" rel="popover" data-html = "true" title-html = "true" title="<a href = "joinworld.html">Join this World</a>" data-content="20% Master Coin <br \> 40% Government Bonds <br />30% Google (GOOG) <br \> 10% PrimeCoin <br \> <b>Size: 26 people<b> <br \> <b>Net Gain: 14%<b>"><img src="./images/medium.png" height = "200px" id = "worldbit3"></a>';
+                                variables.innerHTML = '<br><br><a href = "#" id = "world2" rel="popover" data-html = "true" title-html = "true" title="<a onclick = "joinworld2()">Join this World</a>" data-content="30% Dark Coin <br \> 65% 3D Systems Corporation (DDD) <br \> 5% PeerCoin <br \> <b>Size: 12 people<b> <br \> <b>Net Gain: 30%<b>"><img src="./images/world1.png" height = "175px" id = "worldbit2"></a>';
+                                $("#worldbit2").fadeIn(1500);
+                                $('#worldbit3').fadeIn(1500);
+                                $("#world").animate({"padding": "-40px"});
+                                $("#worldbit").animate({"width": "250px"}, 1000);
+                                $("#worldbit").animate({"height": "220px"}, 1000);
+                                pressedjoinworld = false;
+                                
+                            }
+                            else {
+                                $("#worldbit2").fadeOut(1500);
+                                $('#worldbit3').fadeOut(1500);
+                                $("#world").animate({"padding": "40px"});
+                                $("#worldbit").animate({"width": "400px"}, 1000);
+                                $("#worldbit").animate({"height": "360px"}, 1000);
+                                pressedjoinworld = true;
+                                var information = document.getElementById('fad');
+                                var variables = document.getElementById('info');
+                                variables.innerHTML = '<br><Br><br><br><br><h2 align = "right">Bitcoin <br \>Government Bonds <br \>Apple (AAPL) <br \>Doge Coin <br \> <b>Size:<b> <br \> <b>Net Gain: <b><br><br><a type="button" class="btn btn-primary" href = "joinworld.html">Join World</a></h2>';
+                                information.innerHTML = '<br><Br><br><br><br><h2 align = "left">10% <br \> 70% <br \> 15%  <br \> 5%  <br \> <b>32 people<b> <br \> <b>6.9%<b></h2>';
+                            }
+                        }
+                        $(document).ready(function(){
+                            $("#features").fadeIn(1500);
+                            $("#world").popover({
+                                placement : 'bottom'
+                            });
+                            $("#world2").popover({
+                                placement : 'bottom'
+                            });
+                            $("#world3").popover({
+                                placement : 'bottom'
+                            });
+                        }); 
+                    </script> 
                         
                     </div>
                   </div>
                 </div>
               </div>
 
-    <script>  
-        var pressedjoinworld = false;
-        var pressedjoinworld2 = false;
-        function joinworld() {
-            if (pressedjoinworld == true) {
-                $("#world2").fadeIn(1500);
-                $('#world3').fadeIn(1500);
-                $("#world").animate({"padding": "-40px"});
-                $("#worldbit").animate({"width": "250px"}, 1000);
-                $("#worldbit").animate({"height": "220px"}, 1000);
-                pressedjoinworld = false;
-            }
-            else {
-                $("#world2").fadeOut(1500);
-                $('#world3').fadeOut(1500);
-                $("#world").animate({"padding": "40px"});
-                $("#worldbit").animate({"width": "400px"}, 1000);
-                $("#worldbit").animate({"height": "360px"}, 1000);
-                pressedjoinworld = true;
-            }
-        }
-        $(document).ready(function(){
-            $("#features").fadeIn(1500);
-            $("#world").popover({
-                placement : 'bottom'
-            });
-            $("#world2").popover({
-                placement : 'bottom'
-            });
-            $("#world3").popover({
-                placement : 'bottom'
-            });
-        }); 
-    </script> 
     </body>
 </html>
 

@@ -54,32 +54,117 @@
                   <h3>Investment Vehicles</h3> 
                     <div class="btn-group">
                         <div class="btn-group">
-                        <center><p>Base Currency: </p></center>
-                      <select class="form-control">
-                        <option value="one">One</option>
-                        <option value="two">Two</option>
-                        <option value="three">Three</option>
-                        <option value="four">Four</option>
-                        <option value="five">Five</option>
+                      <select class="form-control" id = "currency">
+                        <option value="one">BTC</option>
+                        <option value="two">DRK</option>
+                        <option value="three">DOGE</option>
+                        <option value="four">PPC</option>
+                        <option value="five">XPM</option>
+                        </select>
+                            <br><br>
+                        <select class="form-control" id = "currency">
+                        <option value="one">BTC</option>
+                        <option value="two">DRK</option>
+                        <option value="three">DOGE</option>
+                        <option value="four">PPC</option>
+                        <option value="five">XPM</option>
+                        <option value="five">Bonds</option>
+                        <option value="five">GOOG</option>
+                        <option value="five">APPL</option>
+                        <option value="five">USD</option>
+                        <option value="five">FB</option>
+                            
+                        </select>
+                            <br><br>
+                        <select class="form-control" id = "currency">
+                        <option value="one">BTC</option>
+                        <option value="two">DRK</option>
+                        <option value="three">DOGE</option>
+                        <option value="four">PPC</option>
+                        <option value="five">XPM</option>
+                        <option value="five">Bonds</option>
+                        <option value="five">GOOG</option>
+                        <option value="five">APPL</option>
+                        <option value="five">USD</option>
+                        <option value="five">FB</option>
+                        </select>
+                            <br><br>
+                        <select class="form-control" id = "currency">
+                        <option value="one">BTC</option>
+                        <option value="two">DRK</option>
+                        <option value="three">DOGE</option>
+                        <option value="four">PPC</option>
+                        <option value="five">XPM</option>
+                        <option value="five">Bonds</option>
+                        <option value="five">GOOG</option>
+                        <option value="five">APPL</option>
+                        <option value="five">USD</option>
+                        <option value="five">FB</option>
+                        </select>
+                            <br><br>
+                        <select class="form-control" id = "currency">
+                        <option value="one">BTC</option>
+                        <option value="two">DRK</option>
+                        <option value="three">DOGE</option>
+                        <option value="four">PPC</option>
+                        <option value="five">XPM</option>
+                        <option value="five">Bonds</option>
+                        <option value="five">GOOG</option>
+                        <option value="five">APPL</option>
+                        <option value="five">USD</option>
+                        <option value="five">FB</option>
+                        </select>
+                            <br><br>
+                        <select class="form-control" id = "currency">
+                        <option value="one">BTC</option>
+                        <option value="two">DRK</option>
+                        <option value="three">DOGE</option>
+                        <option value="four">PPC</option>
+                        <option value="five">XPM</option>
+                        <option value="five">Bonds</option>
+                        <option value="five">GOOG</option>
+                        <option value="five">APPL</option>
+                        <option value="five">USD</option>
+                        <option value="five">FB</option>
                         </select>
                 </div>
               </div>
             </div>
+                  <div class="col-md-1">
+                  </div>
+              <div class="col-md-1">
+                <h3>Allocation</h3>
+                  <br>
+                  <p>30%</p>
+                  <br>
+                  <form role="form">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="percent" placeholder="%">
+                          <br><br>
+                          <input type="text" class="form-control" id="percent" placeholder="%">
+                          <br><br>
+                          <input type="text" class="form-control" id="percent" placeholder="%">
+                          <br><br>
+                          <input type="text" class="form-control" id="percent" placeholder="%">
+                          <br><br>
+                          <input type="text" class="form-control" id="percent" placeholder="%">
+                      </div>
+                </div>
 
                   </div>
                 </div>
-<script>
-$.getJSON("https://coinbase.com/api/v1/prices/spot_rate?currency=USD&callback=?", function( data ) {
-  var items = [];
-  $.each( data, function( key, val ) {
-    items.push( "<option value ='" + key + "'>" + val + "</option>" );
-  });
- 
-  $( "<ul/>", {
-    "class": "currency",
-    html: items.join( "" )
-  }).appendTo( "body" );
-});
-</script>
+        <script>
+            $.getJSON("https://coinbase.com/api/v1/prices/spot_rate?currency=USD&callback=?", function( data ) {
+              var items = [];
+              $.each( data, function( key, val ) {
+                items.push( "<option value ='" + key + "'>" + val + "</option>" );
+              });
+
+              $( "<ul/>", {
+                "class": "currency",
+                html: items.join( "" )
+              }).appendTo( "body" );
+            });
+        </script>
     </body>
 </html>
