@@ -31,7 +31,7 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav">
                         <li><a href="about.html">About</a></li>
-                        <li><a href="#">Worlds</a></li>
+                        <li><a href="#">Planets</a></li>
                           </ul>
                         </li>
                       </ul>
@@ -52,8 +52,8 @@
               </div>
               <div class="col-md-5">
                 <form action="payment.php" method="post">
-                    <br><br><br><br><br><br><br><br><center><h2>Join World</h2></center><br><br>
-                <p style="font-size:32px;"><b><?php echo $_POST['amount']; ?> BTC</b></p>
+                    <br><br><br><br><br><br><br><br><center><h2>Join Planet</h2></center><br><br>
+                <p style="font-size:32px;"><b><?php echo $_POST['amount']; ?> USD</b></p>
  
                 <?php echo $button->embedHtml; ?>
             </form>

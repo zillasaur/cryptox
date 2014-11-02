@@ -29,7 +29,7 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav">
                         <li><a href="about.html">About</a></li>
-                        <li><a href="#">Worlds</a></li>
+                        <li><a href="#">Planets</a></li>
                           </ul>
                         </li>
                       </ul>
@@ -50,7 +50,7 @@
               </div>
               <div class="col-md-5">
                 <form action="payment.php" method="post">
-                    <br><br><br><br><br><br><br><br><center><h2>Join World</h2></center><br><br>
+                    <br><br><br><br><br><br><br><br><center><h2>Join Planet</h2></center><br><br>
                 <p><input type="text" class="form-control input-lg" placeholder="Enter USD amount..." style="text-align:center;" name="amount" autofocus /></p>
                 <p><button class="form-control btn-success">Join</button></p>
             </form>

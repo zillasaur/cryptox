@@ -5,6 +5,9 @@
     
     <head>
         <title>CryptoX</title>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <script src="./js/bootstrap.js"></script>
         <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
         <link href="mystyles.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,7 +31,7 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav">
                         <li><a href="#">About</a></li>
-                        <li><a href="#">Worlds</a></li>
+                        <li><a href="#">Planets</a></li>
                           </ul>
                         </li>
                       </ul>
@@ -38,39 +41,130 @@
                     </div>
                 </div>
             </nav>
-          <h1 align ="center">Create a World</h1>
+          <h1 align ="center">Create a Planet</h1>
         </div>
-        <div class="features">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <center><img src="./images/world.png" height = "500px"></center>
-                    </div>
-                    <div class="col-md-4">
-                      <center><img src="./Pictures/Groups.png" <!-- height = "250px" --></center>
-                    </div>
-                    <div class="col-md-4">
-                      <center><img src="./Pictures/Groups.png" <!-- height = "250px" --></center>
-                    </div>
-                  </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="./images/world.png" height = "450px" class = "rotate">
                 </div>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-4">
-                        <center><img src="./Pictures/Groups.png" <!-- height = "250px" --></center>
-
+                  <div class="col-md-2">
                       </div>
-                    <div class="col-md-4">
-                        <center><img src="./Pictures/Groups.png" <!-- height = "250px" --></center>
-                      </div>
-                    <div class="col-md-4">  
-                        <center><img src="./Pictures/Groups.png" <!-- height = "250px" --></center>
-                      </div>
-                  </div>
-                </div>
-
-                  </div>
+                <div class="col-md-3">
+                  <h3>Investment Vehicles</h3> 
+                    <div class="btn-group">
+                        <div class="btn-group">
+                      <select class="form-control" id = "currency">
+                        <option value="one">BTC</option>
+                        <option value="two">DRK</option>
+                        <option value="three">DOGE</option>
+                        <option value="four">PPC</option>
+                        <option value="five">XPM</option>
+                        </select>
+                            <br><br>
+                        <select class="form-control" id = "currency">
+                        <option value="one">BTC</option>
+                        <option value="two">DRK</option>
+                        <option value="three">DOGE</option>
+                        <option value="four">PPC</option>
+                        <option value="five">XPM</option>
+                        <option value="five">Bonds</option>
+                        <option value="five">GOOG</option>
+                        <option value="five">APPL</option>
+                        <option value="five">USD</option>
+                        <option value="five">FB</option>
+                            
+                        </select>
+                            <br><br>
+                        <select class="form-control" id = "currency">
+                        <option value="one">BTC</option>
+                        <option value="two">DRK</option>
+                        <option value="three">DOGE</option>
+                        <option value="four">PPC</option>
+                        <option value="five">XPM</option>
+                        <option value="five">Bonds</option>
+                        <option value="five">GOOG</option>
+                        <option value="five">APPL</option>
+                        <option value="five">USD</option>
+                        <option value="five">FB</option>
+                        </select>
+                            <br><br>
+                        <select class="form-control" id = "currency">
+                        <option value="one">BTC</option>
+                        <option value="two">DRK</option>
+                        <option value="three">DOGE</option>
+                        <option value="four">PPC</option>
+                        <option value="five">XPM</option>
+                        <option value="five">Bonds</option>
+                        <option value="five">GOOG</option>
+                        <option value="five">APPL</option>
+                        <option value="five">USD</option>
+                        <option value="five">FB</option>
+                        </select>
+                            <br><br>
+                        <select class="form-control" id = "currency">
+                        <option value="one">BTC</option>
+                        <option value="two">DRK</option>
+                        <option value="three">DOGE</option>
+                        <option value="four">PPC</option>
+                        <option value="five">XPM</option>
+                        <option value="five">Bonds</option>
+                        <option value="five">GOOG</option>
+                        <option value="five">APPL</option>
+                        <option value="five">USD</option>
+                        <option value="five">FB</option>
+                        </select>
+                            <br><br>
+                        <select class="form-control" id = "currency">
+                        <option value="one">BTC</option>
+                        <option value="two">DRK</option>
+                        <option value="three">DOGE</option>
+                        <option value="four">PPC</option>
+                        <option value="five">XPM</option>
+                        <option value="five">Bonds</option>
+                        <option value="five">GOOG</option>
+                        <option value="five">APPL</option>
+                        <option value="five">USD</option>
+                        <option value="five">FB</option>
+                        </select>
                 </div>
               </div>
+            </div>
+                  <div class="col-md-1">
+                  </div>
+              <div class="col-md-1">
+                <h3>Allocation</h3>
+                  <br>
+                  <p>30%</p>
+                  <br>
+                  <form role="form">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="percent" placeholder="%">
+                          <br><br>
+                          <input type="text" class="form-control" id="percent" placeholder="%">
+                          <br><br>
+                          <input type="text" class="form-control" id="percent" placeholder="%">
+                          <br><br>
+                          <input type="text" class="form-control" id="percent" placeholder="%">
+                          <br><br>
+                          <input type="text" class="form-control" id="percent" placeholder="%">
+                      </div>
+                </div>
+
+                  </div>
+                </div>
+        <script>
+            $.getJSON("https://coinbase.com/api/v1/prices/spot_rate?currency=USD&callback=?", function( data ) {
+              var items = [];
+              $.each( data, function( key, val ) {
+                items.push( "<option value ='" + key + "'>" + val + "</option>" );
+              });
+
+              $( "<ul/>", {
+                "class": "currency",
+                html: items.join( "" )
+              }).appendTo( "body" );
+            });
+        </script>
     </body>
 </html>

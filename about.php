@@ -27,7 +27,7 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav">
                         <li><a href="about.html">About</a></li>
-                        <li><a href="#">Worlds</a></li>
+                        <li><a href="#">Planets</a></li>
                           </ul>
                         </li>
                       </ul>
@@ -48,7 +48,7 @@
           <div class="row">
             <div class="col-md-12">
               <h1 align = "center">About Us</h1>
-              <h3><br> We start off with a new world.</h3> <font size = "3">In this world, CryptoX users define what makes up the economy. The first decision, made by the founder of the world, is to decide what the world's base currency will be. Wolds can have any crypto currency as their foundation, and 30% of its economy is allocated to the base currency.</font>
+              <h3><br> We start off with a new planet.</h3> <font size = "3">On this planet, CryptoX users define what makes up the economy. The first decision, made by the founder of the planet, is to decide what the planet's base currency will be. Planets can have any crypto currency as their foundation, and 30% of its economy is allocated to the base currency.</font>
                <div class="text">
                 <div class="container">
                   <div class="row">
@@ -58,7 +58,7 @@
                   </div>
                 </div>
               </div>
-              <h3><br> A diversified economy is created.</h3><font size = "3"> The founder then allocates the other 70% of the world's economy into other investment vehicles including stocks, bonds, currencies, and other crypto currencies. The diversity of the world's economy is shown through the establishments on the world. </font>
+              <h3><br> A diversified economy is created.</h3><font size = "3"> The founder then allocates the other 70% of the planet's economy into other investment vehicles including stocks, bonds, currencies, and other crypto currencies. The diversity of the planet's economy is shown through the establishments on the planet. </font>
               <div class="text">
                 <div class="container">
                   <div class="row">
@@ -69,7 +69,7 @@
                 </div>
               </div>
             </div>
-            <h3><br><br><br> All worlds are open ended.</h3><font size = "3"> As other users join the world they take on ownership of the world's economy for the amount they decided to invest. Any member of the world can suggest changes in the allocation of resources, and changes are made when the community comes to consensus. </font>
+            <h3><br><br><br> All planets are open ended.</h3><font size = "3"> As other users join the world they take on ownership of the planet's economy for the amount they decided to invest. Any member of the planet can suggest changes in the allocation of resources, and changes are made when the community comes to consensus. </font>
              <div class="text">
                 <div class="container">
                   <div class="row">
@@ -79,7 +79,7 @@
                   </div>
                 </div>
               </div>
-              <h3><br> Change in ownership.</h3><font size = "3"> When a user decides to leave, they are paid out for their ownership. Users can join and sell ownership at any time.</font>
+              <h3><br> Change in ownership.</h3><font size = "3"> When a user decides to leave, they are paid out for their ownership. Users can buy and sell ownership at any time.</font>
               <div class="text">
                 <div class="container">
                   <div class="row">

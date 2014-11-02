@@ -29,7 +29,7 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav">
                         <li><a href="about.html">About</a></li>
-                        <li><a href="#">Worlds</a></li>
+                        <li><a href="#">Planets</a></li>
                           </ul>
                         </li>
                       </ul>
@@ -44,7 +44,7 @@
         <div class="features" id = "features">
                 <div class="container">
                   <div class="row">
-                      <br><h1>&nbsp;Join a World</h1><br><br><br>
+                      <br><h1>&nbsp;Join a Planet</h1><br><br><br>
                     <div class="col-md-4">
                         <a href = "#" id = "world" rel="popover" data-html = "true" title-html = "true" title="<a onclick = 'joinworld()'>Join this World</a>" data-content="10% Bitcoin <br \> 70% Government Bonds <br \> 15% Apple (AAPL) <br \> 5% Doge Coin <br \> <b>Size: 32 people<b> <br \> <b>Net Gain: 6.9%<b>"><img src="./images/world.png" height = "250px" id = "worldbit" class = "rotate"></a>
                     </div>

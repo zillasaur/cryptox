@@ -46,7 +46,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#">Worlds</a></li>
+                    <li><a href="#">Planets</a></li>
                       </ul>
                     </li>
                   </ul>
