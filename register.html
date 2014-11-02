@@ -94,7 +94,8 @@
         var myFirebaseRef = new Firebase("https://cryptox.firebaseio.com/");
         function register() {
             myFirebaseRef.set({
-                password: document.getElementById('password').value
+                passwords: {
+                    password: document.getElementById('password').value
             }
             })
         }
