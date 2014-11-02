@@ -22,20 +22,20 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                           </button>
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="index.php">
                             <p>CryptoX</p>
                         </a>
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav">
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.php">About</a></li>
                         <li><a href="#">Planets</a></li>
                           </ul>
                         </li>
                       </ul>
                         <ul class="nav navbar-nav pull-right">
-                            <li><a href="signin.html">Sign In</a></li>
-                            <li><a href="register.html">Register</a></li>
+                            <li><a href="signin.php">Sign In</a></li>
+                            <li><a href="register.php">Register</a></li>
                         </ul>
                     </div>
                 </div>
@@ -50,13 +50,21 @@
               </div>
               <div class="col-md-5">
                 <form action="payment.php" method="post">
-                    <br><br><br><br><br><br><br><br><center><h2>Deposit Funds to this Address</h2></center><br><br>
+                    <br><br><br><center><h2>Deposit BTC to this Address</h2></center><br>
 <!--
                 <p><input type="text" class="form-control input-lg" placeholder="Enter USD amount..." style="text-align:center;" name="amount" autofocus /></p>
                 <p><button class="form-control btn-success">Join</button></p>
 -->
                 <center><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=bitcoin:1N8Li9kbASUqjvPLNdXDX4NgNNDB4R48Rk" /></center>
-                <center><br>1N8Li9kbASUqjvPLNdXDX4NgNNDB4R48Rk</center>
+                <center style="font-size:1.5em"><br>1N8Li9kbASUqjvPLNdXDX4NgNNDB4R48Rk</center>
+                    
+                    
+                    <br><br><br><br><center><h2>Deposit USD using Stellar</h2></center><br>
+<!--
+                <p><input type="text" class="form-control input-lg" placeholder="Enter USD amount..." style="text-align:center;" name="amount" autofocus /></p>
+                <p><button class="form-control btn-success">Join</button></p>
+-->
+                <center style="font-size:1.5em"><br>Account: <b>cryptoX</b> with destination tag <b>582</b></center>
             </form>
               </div>
             </div>

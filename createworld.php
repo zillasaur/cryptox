@@ -22,19 +22,19 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                           </button>
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="index.php">
                             <p>CryptoX</p>
                         </a>
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Planets</a></li>
+                        <li><a href="about.php">About</a></li>
+                        <li><a href="index.php">Planets</a></li>
                           </ul>
                         </li>
                       </ul>
                         <ul class="nav navbar-nav pull-right">
-                            <li><a href="">My Profile</a></li>
+                            <li><a href="profile.php">My Profile</a></li>
                         </ul>
                     </div>
                 </div>
@@ -125,6 +125,8 @@
                         <option value="five">USD</option>
                         <option value="five">FB</option>
                         </select>
+                            <Br><br>
+                            <a type="button" class="btn btn-primary" href = "index.php">Create Planet</a>
                 </div>
               </div>
             </div>

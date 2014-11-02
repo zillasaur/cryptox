@@ -1,13 +1,13 @@
 <?php
-    var_dump($_POST);
-    require("mysql.php");
-    require("cookies.php");
+    //var_dump($_POST);
+    //require("mysql.php");
+    //require("cookies.php");
 //INSERT INTO `cryptox`.`users` (`username`, `address1`, `address2`, `address3`, `balance1`, `balance2`, `balance3`, `cookie`) VALUES ('username', '', '', '', '0', '0', '0', 'dfasfd');
-if (!empty($_POST)) {
-    $cookie = generateCookie();
-    $result = mysql_query("INSERT INTO `cryptox`.`users` (`username`, `password`, `address1`, `address2`, `address3`, `balance1`, `balance2`, `balance3`, `cookie`) VALUES ('" . $_POST['display_name'] . "', '" . sha1($_POST['password']) . "', '', '', '', '0', '0', '0', '" . $cookie . "');");
-    var_dump($cookie);
-}
+//if (!empty($_POST)) {
+    //$cookie = generateCookie();
+    //$result = mysql_query("INSERT INTO `cryptox`.`users` (`username`, `password`, `address1`, `address2`, `address3`, `balance1`, `balance2`, `balance3`, `cookie`) VALUES ('" . $_POST['display_name'] . "', '" . sha1($_POST['password']) . "', '', '', '', '0', '0', '0', '" . $cookie . "');");
+    //var_dump($cookie);
+//}
         ?>
 <!DOCTYPE html>
 <html>
@@ -32,27 +32,27 @@ if (!empty($_POST)) {
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                       </button>
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index.php">
                         <p>CryptoX</p>
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.php">About</a></li>
                     <li><a href="#">Worlds</a></li>
                       </ul>
                     </li>
                   </ul>
                     <ul class="nav navbar-nav pull-right">
-                        <li><a href="signin.html">Sign In</a></li>
-                        <li><a href="register.html">Register</a></li>
+                        <li><a href="signin.php">Sign In</a></li>
+                        <li><a href="register.php">Register</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-		<form role="form" action="register.php" method="post">
+		<form role="form" action="index.php" method="get">
 			<h2>Please Sign Up <small>It's free and always will be.</small></h2>
 			<hr class="colorgraph">
 			<div class="form-group">
@@ -80,7 +80,7 @@ if (!empty($_POST)) {
 			<hr class="colorgraph">
 			<div class="row">
 				<div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7" onclick = "register()"></div>
-				<div class="col-xs-12 col-md-6"><a href="signin.html" class="btn btn-success btn-block btn-lg">Sign In</a></div>
+				<div class="col-xs-12 col-md-6"><a href="signin.php" class="btn btn-success btn-block btn-lg">Sign In</a></div>
 			</div>
 		</form>
 	</div>
