@@ -91,17 +91,12 @@
 	</div>
     <script>
     var myFirebaseRef = new Firebase("https://cryptox.firebaseio.com/");
+    var usersRef = myFirebaseRef.child("users");
     function register() {
-        myFirebaseRef.createUser({
-          email    : document.getElementById('display_name'),
-          password : document.getElementById('password')
-        }, function(error) {
-          if (error === null) {
-            console.log("User created successfully");
-          } else {
-            console.log("Error creating user:", error);
-          }
-        });
+        myFirebaseRef.set({
+            username: document.getElementById('display_name'),
+            password: document.getElementById('password')
+        })
     }
     </script>
 </div>
