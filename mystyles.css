@@ -16,3 +16,13 @@
 .navbar-inverse p {
     color: #FFF;
 }
+
+h1 {
+	display: block;
+    font-size: 5em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 5;
+    margin-right: 5;
+    font-weight: bold;
+}
