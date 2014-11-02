@@ -33,9 +33,9 @@ h1 {
 
 }
 
-img{ 
-    -moz-animation:30s rotateRight infinite linear; 
-    -webkit-animation:30s rotateRight infinite linear; 
+.rotate{ 
+    -moz-animation:90s rotateRight infinite linear; 
+    -webkit-animation:90s rotateRight infinite linear; 
 }
 
 @-moz-keyframes rotateRight{
