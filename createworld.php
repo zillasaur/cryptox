@@ -1,5 +1,3 @@
-<?php require('includes/coinbase.inc.php'); ?>
-
 <!DOCTYPE html>
 <html>
     

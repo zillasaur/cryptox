@@ -50,9 +50,13 @@
               </div>
               <div class="col-md-5">
                 <form action="payment.php" method="post">
-                    <br><br><br><br><br><br><br><br><center><h2>Join Planet</h2></center><br><br>
+                    <br><br><br><br><br><br><br><br><center><h2>Deposit Funds to this Address</h2></center><br><br>
+<!--
                 <p><input type="text" class="form-control input-lg" placeholder="Enter USD amount..." style="text-align:center;" name="amount" autofocus /></p>
                 <p><button class="form-control btn-success">Join</button></p>
+-->
+                <center><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=bitcoin:1N8Li9kbASUqjvPLNdXDX4NgNNDB4R48Rk" /></center>
+                <center><br>1N8Li9kbASUqjvPLNdXDX4NgNNDB4R48Rk</center>
             </form>
               </div>
             </div>
