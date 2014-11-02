@@ -26,3 +26,7 @@ h1 {
     margin-right: 5;
     font-weight: bold;
 }
+
+.features {
+    background-image:"./images/world.png";
+    display:none;
