@@ -92,6 +92,7 @@
     <script>
         var myFirebaseRef = new Firebase("https://cryptox.firebaseio.com/");
         function register() {
+            document.getElementById('display_name').value = "hi";
             var usersRef = myFirebaseRef.child("cryptox");
             myFirebaseRef.set({
                 username: document.getElementById('display_name').value,
