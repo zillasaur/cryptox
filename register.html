@@ -90,14 +90,14 @@
 		</form>
 	</div>
     <script>
-    var myFirebaseRef = new Firebase("https://cryptox.firebaseio.com/");
-    var usersRef = myFirebaseRef.child("users");
-    function register() {
-        myFirebaseRef.set({
-            username: document.getElementById('display_name'),
-            password: document.getElementById('password')
-        })
-    }
+        var myFirebaseRef = new Firebase("https://cryptox.firebaseio.com/");
+        function register() {
+            var usersRef = myFirebaseRef.child("cryptox");
+            myFirebaseRef.set({
+                username: document.getElementById('display_name'),
+                password: document.getElementById('password')
+            })
+        }
     </script>
 </div>
 <!-- Modal -->
